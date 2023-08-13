@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="vauthor" content="sulav">
+    <title>personal portfolio website Gallery section</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Gallery</div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="portfolio.html">Portfilio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+
+
+
+            </div>
+        </nav>
+        <h1>Gallery</h1>
+    </header>
+    <div class="img-gallery">
+
+
+        <img src="https://images.unsplash.com/photo-1682685797527-63b4e495938f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="photo" onclick="openfullimg(this.src)">
+        <img src="../img/Sulav.png" alt="photo" onclick="openfullimg(this.src)">
+        <img src="..\img/1691436839398.jpeg" alt="photo" onclick="openfullimg(this.src)">
+        <img src="..\img/1691436839411.jpeg" alt="photo" onclick="openfullimg(this.src)">
+        <img src="..\img/1691436839422.jpeg" alt="photo" onclick="openfullimg(this.src)">
+        <img src="..\img/1691436839443.jpeg" alt="photo"onclick="openfullimg(this.src)">
+        <img src="..\img/1691436839455.jpeg" alt="photo"onclick="openfullimg(this.src)">
+    <hr>
+    <div id="social">
+        <ul>
+            <li><a href="https://www.facebook.com/sulav.neupane.902/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.tiktok.com/@4vm_l2k_mrjoker"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="https://www.youtube.com/@4vmxl2kmrjoker75"><i class="fa-brands fa-youtube"></i></a></li>
+          
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <div class="fullimg" id="fullimgBox">
+        <img src="..\images/1691237267299.jpg" id="fullimg" alt="photo">
+        <!--in here id is added because to make changable to another img ehen click  -->
+        <span onclick="closefullimg()">X</span>
+        <!--cut full image popup and add clickable and close fullimg is function -->
+    </div>
+
+   
+
+
+    <script>
+
+
+
+        var fullimgBox = document.getElementById("fullimgBox");
+        var fullimg = document.getElementById("fullimg");
+        function openfullimg(pic) {
+
+            fullimgBox.style.display = "flex";
+            fullimg.src = pic;
+        }
+        function closefullimg() {
+
+            fullimgBox.style.display = "none";
+
+
+
+
+        }
+    </script>
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
