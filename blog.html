@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="vauthor" content="sulav">
+  <title>personal portfolio website</title>
+  <link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+        <div class="left">Blog</div>
+
+        <div class="right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="portfolio.html">Portfilio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+
+
+        </div>
+    </nav>
+</header>
+
+
+  <main>
+    <div class="blog-container">
+      <h1>Blog</h1>
+      <div class="blog-posts">
+        <div class="blog-post">
+          <h2>AI</h2>
+          <p> Artificial intelligence (AI) is technology that is created to make daily life easier and to perform tasks
+            that are done by humans. The world around us is getting digitized and AI is getting more advanced.........
+            <a href="https://sulavneupane8857.blogspot.com/2023/08/ai.html">view
+              more</a>
+          </p>
+          <button class="show-comment-form">Add Comment</button>
+          <div class="comment-form" style="display: none;">
+            <label for="comment">Your Comment:</label>
+            <textarea id="comment" name="comment"></textarea>
+            <button class="submit-comment">Submit Comment</button>
+          </div>
+          <div class="comments">
+            <!-- Comments for the first blog post will appear here -->
+          </div>
+        </div>
+        <div class="blog-container">
+          <h1>Blog</h1>
+          <div class="blog-posts">
+            <div class="blog-post">
+              <h2> Transition to a Green Economy in Developing Countries
+
+              </h2>
+              <p>The author does point out that for developing nations, making the switch to a green economy is not an
+                easy process. These nations frequently encounter difficult situations, such as scarce financial
+                resources, inadequate institutional strength, and a lack of technological know-how..........<a
+                  href="https://sulavneupane8857.blogspot.com/2023/08/transition-to-green-economy-in.html">view
+                  more</a>
+              </p>
+              <button class="show-comment-form">Add Comment</button>
+              <div class="comment-form" style="display: none;">
+                <label for="comment">Your Comment:</label>
+                <textarea id="comment" name="comment"></textarea>
+                <button class="submit-comment">Submit Comment</button>
+              </div>
+              <div class="comments">
+                <!-- Comments for the 2nd blog post will appear here -->
+              </div>
+              <!-- Add more blog posts here -->
+              <div class="blog-container">
+                <h1>Blog</h1>
+                <div class="blog-posts">
+                  <div class="blog-post">
+                    <h2> 
+
+                      The Impacts of Artificial Intelligence
+                     
+                      
+
+                    </h2>
+                    <p>Artificial Intelligence (AI), the culmination of human ingenuity and technological advancement,
+                      has ushered in a new era of possibilities, offering both transformative opportunities and daunting
+                      challenges across various dimensions of society, economy, and technology. As AI continues to
+                      evolve, its impacts are becoming increasingly evident, raising crucial questions about the
+                      benefits it brings and the potential pitfalls it presents.
+
+                      One of the most remarkable positive impacts of AI is the automation and efficiency it introduces.
+                      Mundane and repetitive tasks that once occupied valuable human resources can now be accomplished
+                      by AI-driven systems, liberating individuals to focus on more creative and intellectually
+                      demanding endeavors. This paradigm shift in labor dynamics holds the potential to drive
+                      unprecedented productivity gains across industries. For instance, manufacturing processes can be
+                      streamlined, healthcare diagnosis can be expedited, and customer service can be enhanced, all
+                      contributing to a more efficient and effective global economy.
+
+                      Furthermore, AI's ability to analyze vast volumes of data and extract meaningful insights has
+                      revolutionized decision-making processes. From financial markets to medical diagnoses, AI aids
+                      professionals in making informed choices based on a thorough understanding of complex patterns and
+                      trends. This data-driven approach enhances accuracy and minimizes human errors, ultimately leading
+                      to better outcomes. In resear.........<a
+                        href="https://sulavneupane8857.blogspot.com/2023/08/the-impacts-of-artificial-intelligence.html">view
+                        more</a>
+                    </p>
+                    <button class="show-comment-form">Add Comment</button>
+                    <div class="comment-form" style="display: none;">
+                      <label for="comment">Your Comment:</label>
+                      <textarea id="comment" name="comment"></textarea>
+                      <button class="submit-comment">Submit Comment</button>
+                    </div>
+                    <div class="comments">
+                      <!-- Comments for the 2nd blog post will appear here -->
+                    </div>
+                    <!-- Add more blog posts here -->
+                  </div>
+                </div>
+  </main>
+  <script>
+
+
+    const showCommentButtons = document.querySelectorAll('.show-comment-form');
+    const commentForms = document.querySelectorAll('.comment-form');
+    const submitCommentButtons = document.querySelectorAll('.submit-comment');
+    const commentsContainers = document.querySelectorAll('.comments');
+
+    // Add event listeners to show comment forms
+    showCommentButtons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        commentForms[index].style.display = 'block';
+      });
+    });
+
+    // Add event listeners to submit comments
+    submitCommentButtons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        const commentTextarea = commentForms[index].querySelector('textarea');
+        const comment = commentTextarea.value;
+
+        if (comment.trim() !== '') {
+          const commentElement = document.createElement('p');
+          commentElement.textContent = comment;
+          commentsContainers[index].appendChild(commentElement);
+          commentTextarea.value = '';
+        }
+      });
+    });
+  </script>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 sulav neupane . All rights reserved.</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
