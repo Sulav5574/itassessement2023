@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sulav">
+    <title>Home</title>
+    <link rel="icon" href="img/lo.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=REM:wght@200;400;500&family=Raleway:wght@400;500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sulav's Website Home</div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="portfolio.html">Portfilio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+
+
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+        <section class="firstSec">
+            <div class="leftSec">
+                Hi, My name is <span class="c1">Sulav</span>
+                <br>
+                and I am <span class="c3">studing</span>
+                <br>
+                <!-- this is used to make a text animated -->
+                <span id="element"></span>
+                <br>
+                in <span class="c4">The British College</span>
+
+            </div>
+
+
+            <div class="rightSec">
+                <img src="/img/CS.jpg" alt="">
+
+            </div>
+
+        </section>
+
+        <hr>
+
+
+    </main>
+
+    <!-- to load library -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- to start animation -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Cyber Security & Digital Forensics', 'Cyber Security & Digital Forensics.'],
+            typeSpeed: 150,
+        });
+    </script>
+</body>
+
+
+
+</body>
+
+</html>
